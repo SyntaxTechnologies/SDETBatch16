@@ -1,3 +1,0 @@
-Create a Java program and name it Practice Variables
-In your program create 8 variables to store all different types of primitive data
-Print the value of each variable
