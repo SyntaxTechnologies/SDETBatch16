@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Map;
 
 public class ExcelReader {
-    public static List<Map<String, String>> read(String sheetName, String path) throws IOException {
+    public static List<Map<String, String>> read(String sheetName, String path) {
         FileInputStream fileInputStream = null;
         List<Map<String,String>> excelData = new ArrayList<>();
         try {
@@ -37,7 +37,13 @@ public class ExcelReader {
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            fileInputStream.close();
+            try {
+                if (fileInputStream != null) {
+                    fileInputStream.close();
+                }
+            } catch (IOException e) {
+               e.printStackTrace();
+            }
         }
         return excelData;
     }
