@@ -20,3 +20,8 @@ Solution:
     Debugger
 Exceptions/Runtime errors:
 
+
+The finally block is useful for cleaning up resources such as
+files or network connections, that should be closed no matter what happens
+(whether there is an exception or not) in the try block. It ensures that the
+block of code inside it is executed no matter what exceptions occur
