@@ -1,0 +1,22 @@
+An exception in Java is an event that occurs during the execution of a
+program that disrupts the normal flow of instructions. When an error occurs
+within a method, the method creates an object and hands it off to the runtime
+system. The object, called an exception object, contains information about the
+error, including its type and the state of the program when the error occurred.
+Types of errors:
+Compile Time Errors:
+    A compile-time error, or a syntax error, occurs when you write code
+    that the compiler can't understand or is invalid. This type of error is
+    usually detected by the compiler before the code is executed, so the code
+    will not run until the errors are fixed.
+Solution:
+    We can fix these type of issues by learning the syntax of the language.
+    Intellij can also help us fix these types of issues.
+Logical issues/logical bugs:
+    logical issues are when the code runs without errors, but doesn't give
+    you the expected result. It means there is a problem with the underlying
+    logic of the code
+Solution:
+    Debugger
+Exceptions/Runtime errors:
+
