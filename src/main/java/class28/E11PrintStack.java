@@ -7,7 +7,7 @@ public class E11PrintStack {
             System.out.println(10/0);
         }catch (ArithmeticException e){
            // System.out.println(e.getMessage());
-           // System.out.println(e);
+          //  System.out.println(e);
             e.printStackTrace();
         }
         System.out.println("1");
