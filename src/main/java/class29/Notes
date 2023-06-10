@@ -1,0 +1,7 @@
+what are Exceptions?
+    Exceptions are runtime errors that disturbs the normal flow of a programs.
+    There are two main types of exceptions in java. Checked and Non-checked.
+Why should we handle exceptions by writing try catch blocks?
+    1)To avoid software crashes.
+    2) Convert complex error messages to simple text that
+    everyone can understand.
