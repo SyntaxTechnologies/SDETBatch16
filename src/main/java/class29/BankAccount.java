@@ -11,6 +11,10 @@ public class BankAccount {
         if (amountToWithdraw > balance) {
           throw new InsufficientBalance("Not possible insufficient balance");
         }
+        /*
+        balance =100
+        100-30;
+         */
         balance = balance - amountToWithdraw;
     }
 }
