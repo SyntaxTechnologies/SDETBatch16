@@ -10,3 +10,12 @@ Why should we create methods?
 When should we create a method?
     If we are repeating more than 3 lines of code twice then we should create a
     method.
+Syntax of a method:
+    returnType methodName(){
+
+    }
+
+    Example
+    void printHello(){
+    sout"Hello";
+    }
