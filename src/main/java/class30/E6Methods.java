@@ -15,7 +15,6 @@ public class E6Methods {
     }
 
     void print(List<Integer> list) {
-
         for (int l:list
              ) {
             System.out.println(l);
