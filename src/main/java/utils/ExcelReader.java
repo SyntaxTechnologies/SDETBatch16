@@ -13,12 +13,12 @@ import java.util.Map;
 
 public class ExcelReader {
     public static List<Map<String, String>> read(String sheetName, String path) {
-        FileInputStream fileInputStream = null;
+
         List<Map<String,String>> excelData = new ArrayList<>();
-        try {
-            fileInputStream = new FileInputStream(path);
+        try( FileInputStream fileInputStream= new FileInputStream(path);
+             XSSFWorkbook xssfWorkbook = new XSSFWorkbook(fileInputStream);
+        ) {
             // that special call which knows how to read the data from excel files
-            XSSFWorkbook xssfWorkbook = new XSSFWorkbook(fileInputStream);
             Sheet sheet = xssfWorkbook.getSheet(sheetName);
 
             Row headerRow = sheet.getRow(0);
@@ -36,14 +36,6 @@ public class ExcelReader {
 
         } catch (IOException e) {
             e.printStackTrace();
-        } finally {
-            try {
-                if (fileInputStream != null) {
-                    fileInputStream.close();
-                }
-            } catch (IOException e) {
-               e.printStackTrace();
-            }
         }
         return excelData;
     }
