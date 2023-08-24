@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class E4SQL {
     public static void main(String[] args) {
-
+        int age=10,price=10;
         String query = "select emp_firstname,emp_lastname,emp_birthday from hs_hr_employees;";
         List<Map<String, String>> data = DBUtils.fetch(query);
         Map<String,String> firstRow=data.get(1);
